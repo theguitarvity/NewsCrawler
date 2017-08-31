@@ -2,7 +2,7 @@ from neo4j.v1 import GraphDatabase
 import scrapy
 
 class FacomFinalSpider(scrapy.Spider):
-    name = 'facomFinal'
+    name = 'testeFinal'
     start_url = ['http://facom.ufms.br/noticias']
 
     def add_noticia(self, title, text):

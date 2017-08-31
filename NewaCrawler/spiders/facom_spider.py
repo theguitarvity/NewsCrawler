@@ -1,8 +1,8 @@
 import scrapy
 class FacomSpider(scrapy.Spider):
     name = 'facom'
-    endereco = raw_input('digite a url')
-    start_urls =[endereco] 
+    
+    start_urls =['http://facom.ufms.br/noticias'] 
     def parse(self, response):
         for quote in response.css('div.media-body'):
             yield{
